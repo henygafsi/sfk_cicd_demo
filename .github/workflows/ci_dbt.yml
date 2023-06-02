@@ -48,7 +48,7 @@
         - name: Run dbt
           env:
             DBT_PROFILES_DIR: ./
-          run: dbt run --profiles-dir $DBT_PROFILES_DIR
+          run: dbt run 
   
     staging:
       runs-on: ubuntu-latest
