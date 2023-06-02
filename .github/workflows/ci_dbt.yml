@@ -92,7 +92,7 @@
           env:
             DBT_PROFILES_DIR: ~/.dbt
           run: |
-            dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
+            dbt debug --profiles-dir . --profile $DBT_PROFILE
             dbt run --select dbt_project_demo
   
     production:
