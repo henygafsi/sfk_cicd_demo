@@ -1,5 +1,6 @@
 
   name: dbt Snowflake Pipeline
+
   on:
     push:
       branches:
@@ -7,7 +8,6 @@
     pull_request:
       branches:
         - main
-  
   jobs:
     dev:
       runs-on: ubuntu-latest
@@ -19,7 +19,8 @@
         SNOWFLAKE_ROLE: ${{ secrets.SF_ROLE }}
         SNOWFLAKE_DATABASE: ${{ secrets.SF_DATABASE }}
         SNOWFLAKE_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
-  
+        DBT_FOLDER: dbt_project_demo
+        DBT_PROFILE: dbt_ci_profile
   
       steps:
         - name: Checkout repository
@@ -49,8 +50,10 @@
         - name: Run dbt
           env:
             DBT_PROFILES_DIR: ./
-          run: dbt run 
-  
+          run: 
+              dbt debug --profiles-dir . --profile $DBT_PROFILE --target $CI_ENVIRONMENT_NAME
+              dbt compile --profiles-dir . --profile $DBT_PROFILE --target $CI_ENVIRONMENT_NAME
+          
     staging:
       runs-on: ubuntu-latest
       env:
