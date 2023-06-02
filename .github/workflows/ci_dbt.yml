@@ -50,7 +50,7 @@
         - name: Run dbt
           env:
             DBT_PROFILES_DIR: ./
-          run: 
+          run: |
               dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
               dbt run --select dbt_project_demo
 
@@ -92,7 +92,7 @@
         - name: Run dbt
           env:
             DBT_PROFILES_DIR: ~/.dbt
-          run:   
+          run: |
             dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
             dbt run --select dbt_project_demo
   
@@ -135,5 +135,6 @@
         - name: Run dbt
           env:
             DBT_PROFILES_DIR: ~/.dbt
-          run: dbt run --profiles-dir $DBT_PROFILES_DIR
+          run: |
+            dbt run --profiles-dir $DBT_PROFILES_DIR
   
