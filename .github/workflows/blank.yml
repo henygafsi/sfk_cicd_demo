@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - 'migrations/**'
+      - 'sfk_cicd_demo/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
