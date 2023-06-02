@@ -52,7 +52,7 @@
             DBT_PROFILES_DIR: ./
           run: 
               dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
-              dbt run --full-refresh
+              dbt run --select dbt_project_demo
 
     staging:
       runs-on: ubuntu-latest
@@ -92,7 +92,9 @@
         - name: Run dbt
           env:
             DBT_PROFILES_DIR: ~/.dbt
-          run: dbt run
+          run:   
+            dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
+            dbt run --select dbt_project_demo
   
     production:
       needs: staging
