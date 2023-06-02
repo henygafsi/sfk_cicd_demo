@@ -52,7 +52,8 @@
             DBT_PROFILES_DIR: ./
           run: 
               dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
-              dbt --partial-parse build  --profiles-dir . --profile $DBT_PROFILE --target dev
+              dbt run --full-refresh
+
     staging:
       runs-on: ubuntu-latest
       env:
