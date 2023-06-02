@@ -51,8 +51,8 @@
           env:
             DBT_PROFILES_DIR: ./
           run: 
-              dbt debug --profiles-dir . --profile $DBT_PROFILE --target $CI_ENVIRONMENT_NAME
-              dbt compile --profiles-dir . --profile $DBT_PROFILE --target $CI_ENVIRONMENT_NAME
+              dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
+              dbt compile --profiles-dir . --profile $DBT_PROFILE --target dev
           
     staging:
       runs-on: ubuntu-latest
