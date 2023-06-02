@@ -49,7 +49,7 @@
   
         - name: Run dbt
           env:
-            DBT_PROFILES_DIR: ./
+            DBT_PROFILES_DIR: /dbt_project_demo
           run: |
               dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
               dbt run --select dbt_project_demo
