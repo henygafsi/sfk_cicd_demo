@@ -75,7 +75,6 @@
   
         - name: Configure dbt profiles.yml
           run: |
-            mkdir -p ~/.dbt
             echo "default:" >> ~/.dbt/profiles.yml
             echo "  outputs:" >> ~/.dbt/profiles.yml
             echo "    staging:" >> ~/.dbt/profiles.yml
