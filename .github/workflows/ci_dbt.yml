@@ -10,7 +10,7 @@
         - main
   jobs:
     dev:
-      runs-on: ubuntu-latest
+      runs-on: self-hosted
       env:
         ENVIRONMENT: dev
         SNOWFLAKE_ACCOUNT: ${{ secrets.SF_ACCOUNT }}
@@ -55,7 +55,7 @@
               dbt run --select dbt_project_demo
 
     staging:
-      runs-on: ubuntu-latest
+      runs-on: self-hosted
       env:
         ENVIRONMENT: staging
         SNOWFLAKE_ACCOUNT: ${{ secrets.SF_ACCOUNT }}
