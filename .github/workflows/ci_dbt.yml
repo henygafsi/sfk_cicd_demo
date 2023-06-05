@@ -1,5 +1,6 @@
 
   name: dbt Snowflake Pipeline
+
   on:
     push:
       branches:
@@ -7,7 +8,6 @@
     pull_request:
       branches:
         - main
-  
   jobs:
     dev:
       runs-on: ubuntu-latest
@@ -19,7 +19,8 @@
         SNOWFLAKE_ROLE: ${{ secrets.SF_ROLE }}
         SNOWFLAKE_DATABASE: ${{ secrets.SF_DATABASE }}
         SNOWFLAKE_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
-  
+        DBT_FOLDER: dbt_project_demo
+        DBT_PROFILE: dbt_ci_profile
   
       steps:
         - name: Checkout repository
@@ -48,20 +49,21 @@
   
         - name: Run dbt
           env:
-            DBT_PROFILES_DIR: ./
-          run: dbt run 
-  
+            DBT_PROFILES_DIR: /Users/henygafsi/.dbt/profiles.yml
+          run: |
+              dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
+              dbt run --select dbt_project_demo
+
     staging:
       runs-on: ubuntu-latest
       env:
         ENVIRONMENT: staging
-        SNOWFLAKE_ACCOUNT: ${{ secrets.STAGING_SNOWFLAKE_ACCOUNT }}
-        SNOWFLAKE_USER: ${{ secrets.STAGING_SNOWFLAKE_USER }}
-        SNOWFLAKE_PASSWORD: ${{ secrets.STAGING_SNOWFLAKE_PASSWORD }}
-        SNOWFLAKE_ROLE: ${{ secrets.STAGING_SNOWFLAKE_ROLE }}
-        SNOWFLAKE_DATABASE: ${{ secrets.STAGING_SNOWFLAKE_DATABASE }}
-        SNOWFLAKE_WAREHOUSE: ${{ secrets.STAGING_SNOWFLAKE_WAREHOUSE }}
-        SNOWFLAKE_SCHEMA: ${{ secrets.STAGING_SNOWFLAKE_SCHEMA }}
+        SNOWFLAKE_ACCOUNT: ${{ secrets.SF_ACCOUNT }}
+        SNOWFLAKE_USER: ${{ secrets.SF_USERNAME }}
+        SNOWFLAKE_PASSWORD: ${{ secrets.SF_PASSWORD }}
+        SNOWFLAKE_ROLE: ${{ secrets.SF_ROLE }}
+        SNOWFLAKE_DATABASE: ${{ secrets.SF_DATABASE }}
+        SNOWFLAKE_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
   
       steps:
         - name: Checkout repository
@@ -89,7 +91,9 @@
         - name: Run dbt
           env:
             DBT_PROFILES_DIR: ~/.dbt
-          run: dbt run --profiles-dir $DBT_PROFILES_DIR
+          run: |
+            dbt debug --profiles-dir . --profile $DBT_PROFILE
+            dbt run --select dbt_project_demo
   
     production:
       needs: staging
@@ -130,5 +134,6 @@
         - name: Run dbt
           env:
             DBT_PROFILES_DIR: ~/.dbt
-          run: dbt run --profiles-dir $DBT_PROFILES_DIR
+          run: |
+            dbt run --profiles-dir $DBT_PROFILES_DIR
   
