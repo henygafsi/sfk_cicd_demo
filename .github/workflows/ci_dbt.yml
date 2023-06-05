@@ -33,6 +33,8 @@
     
         - name: Configure dbt profiles.yml
           run: |
+            python -V
+            pip install --upgrade pip
             pip install dbt-snowflake
             mkdir -p ~/.dbt
             echo "default:" >> ~/.dbt/profiles.yml
