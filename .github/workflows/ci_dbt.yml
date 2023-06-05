@@ -49,7 +49,7 @@
   
         - name: Run dbt
           env:
-            DBT_PROFILES_DIR: /Users/henygafsi/.dbt/profiles.yml
+            DBT_PROFILES_DIR: /Users/henygafsi/Documents/GitHub/sfk_cicd_demo/actions-runner/_work/sfk_cicd_demo/sfk_cicd_demo/dbt_project_demo/profiles.yml
           run: |
               dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
               dbt run --select dbt_project_demo
