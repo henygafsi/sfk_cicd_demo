@@ -51,5 +51,5 @@
             cd $DBT_FOLDER
             dbt deps
             dbt compile --profiles-dir . --profile $DBT_PROFILE
-            dbt run-operation my_first_dbt_model --profiles-dir . --profile $DBT_PROFILE --target DEV
+            dbt run-operation my_first_dbt_model --profiles-dir . --profile $DBT_PROFILE
             dbt run 
