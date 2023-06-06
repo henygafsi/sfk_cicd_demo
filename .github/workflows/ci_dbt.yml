@@ -20,6 +20,7 @@
         SNOWFLAKE_DATABASE: ${{ secrets.SF_DATABASE }}
         SNOWFLAKE_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
         DBT_PROFILE: dbt_ci_profile
+        DBT_FOLDER: dbt_project_demo
       steps:
         - name: Checkout repository
           uses: actions/checkout@v2
@@ -47,5 +48,6 @@
           env:
             DBT_PROFILES_DIR: ~/.dbt
           run: |
+            cd $DBT_FOLDER
             dbt compile --profiles-dir . --profile $DBT_PROFILE
             dbt run --profiles-dir $DBT_PROFILES_DIR
