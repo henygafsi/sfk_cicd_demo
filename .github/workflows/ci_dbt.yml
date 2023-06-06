@@ -93,7 +93,6 @@
           env:
             DBT_PROFILES_DIR: ~/.dbt
           run: |
-            dbt debug -h --project-dir dbt_project_demo
             dbt run --select dbt_project_demo
   
     production:
