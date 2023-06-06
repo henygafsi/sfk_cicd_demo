@@ -74,7 +74,7 @@
         - name: Install dependencies
           run: |
             pip install dbt-snowflake
-  
+            dbt deps
         - name: Configure dbt profiles.yml
           run: |
             echo "default:" >> ~/.dbt/profiles.yml
@@ -93,7 +93,7 @@
           env:
             DBT_PROFILES_DIR: ~/.dbt
           run: |
-            dbt run --select dbt_project_demo
+            dbt run 
   
     production:
       needs: staging
