@@ -49,4 +49,3 @@
           run: |
             dbt compile --profiles-dir . --profile $DBT_PROFILE
             dbt run --profiles-dir $DBT_PROFILES_DIR
-  
