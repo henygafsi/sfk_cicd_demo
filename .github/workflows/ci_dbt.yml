@@ -24,7 +24,7 @@
   
       steps:
         - name: Checkout repository
-          uses: actions/checkout@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
+          uses: actions/checkout@v2
 
         - name: Use Python 3.8.x
           uses: actions/setup-python@v2.2.1
