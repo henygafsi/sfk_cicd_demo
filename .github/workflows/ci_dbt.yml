@@ -30,6 +30,7 @@
           uses: actions/setup-python@v2.2.1
           with:
             python-version: 3.8.x
+            token: ${{ secrets.ACCESS_TOKEN }}
     
         - name: Configure dbt profiles.yml
           run: |
