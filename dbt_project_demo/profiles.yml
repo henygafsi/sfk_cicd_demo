@@ -1,5 +1,5 @@
 dbt_ci_profile:
-  target: dev
+  target: DEV
   outputs:
     dev:
       account: 'ye35211.eu-central-1'
