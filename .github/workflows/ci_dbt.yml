@@ -12,15 +12,14 @@
     dev:
       runs-on: ubuntu-latest
       env:
-        ENVIRONMENT: production
-        SNOWFLAKE_ACCOUNT: ${{ secrets.PRODUCTION_SNOWFLAKE_ACCOUNT }}
-        SNOWFLAKE_USER: ${{ secrets.PRODUCTION_SNOWFLAKE_USER }}
-        SNOWFLAKE_PASSWORD: ${{ secrets.PRODUCTION_SNOWFLAKE_PASSWORD }}
-        SNOWFLAKE_ROLE: ${{ secrets.PRODUCTION_SNOWFLAKE_ROLE }}
-        SNOWFLAKE_DATABASE: ${{ secrets.PRODUCTION_SNOWFLAKE_DATABASE }}
-        SNOWFLAKE_WAREHOUSE: ${{ secrets.PRODUCTION_SNOWFLAKE_WAREHOUSE }}
-        SNOWFLAKE_SCHEMA: ${{ secrets.PRODUCTION_SNOWFLAKE_SCHEMA }}
-  
+        ENVIRONMENT: dev
+        SNOWFLAKE_ACCOUNT: ${{ secrets.SF_ACCOUNT }}
+        SNOWFLAKE_USER: ${{ secrets.SF_USERNAME }}
+        SNOWFLAKE_PASSWORD: ${{ secrets.SF_PASSWORD }}
+        SNOWFLAKE_ROLE: ${{ secrets.SF_ROLE }}
+        SNOWFLAKE_DATABASE: ${{ secrets.SF_DATABASE }}
+        SNOWFLAKE_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
+        DBT_PROFILE: dbt_ci_profile
       steps:
         - name: Checkout repository
           uses: actions/checkout@v2
@@ -48,7 +47,6 @@
           env:
             DBT_PROFILES_DIR: ~/.dbt
           run: |
-            dbt debug  
-            dbt run -h
+            dbt compile --profiles-dir . --profile $DBT_PROFILE
             dbt run --profiles-dir $DBT_PROFILES_DIR
   
