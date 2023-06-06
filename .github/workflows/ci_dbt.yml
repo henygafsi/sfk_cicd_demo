@@ -48,7 +48,7 @@
           env:
             DBT_PROFILES_DIR: ~/.dbt
           run: |
-            dbt debug
-            dbt compile  
+            dbt debug  
+            dbt run -h
             dbt run --profiles-dir $DBT_PROFILES_DIR
   
