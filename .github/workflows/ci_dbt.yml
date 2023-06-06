@@ -49,5 +49,6 @@
             DBT_PROFILES_DIR: ~/.dbt
           run: |
             cd $DBT_FOLDER
+            dbt deps
             dbt compile --profiles-dir . --profile $DBT_PROFILE
             dbt run --profiles-dir $DBT_PROFILES_DIR
