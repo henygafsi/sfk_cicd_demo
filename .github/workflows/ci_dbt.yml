@@ -10,7 +10,7 @@
         - main
   jobs:
     dev:
-      runs-on: self-hosted
+      runs-on: ubuntu-latest
       env:
         ENVIRONMENT: dev
         SNOWFLAKE_ACCOUNT: ${{ secrets.SF_ACCOUNT }}
@@ -19,39 +19,37 @@
         SNOWFLAKE_ROLE: ${{ secrets.SF_ROLE }}
         SNOWFLAKE_DATABASE: ${{ secrets.SF_DATABASE }}
         SNOWFLAKE_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
-        DBT_FOLDER: dbt_project_demo
         DBT_PROFILE: dbt_ci_profile
-  
+        DBT_FOLDER: dbt_project_demo
       steps:
         - name: Checkout repository
           uses: actions/checkout@v2
-
-        - name: Use Python 3.8.x
-          uses: actions/setup-python@v2.2.1
-          with:
-            python-version: 3.8.x
-    
+  
+        - name: Install dependencies
+          run: |
+            pip install dbt-snowflake
+  
         - name: Configure dbt profiles.yml
           run: |
-            python -V
-            pip install --upgrade pip
-            pip install dbt-snowflake
             mkdir -p ~/.dbt
             echo "default:" >> ~/.dbt/profiles.yml
             echo "  outputs:" >> ~/.dbt/profiles.yml
-            echo "    dev:" >> ~/.dbt/profiles.yml
+            echo "    production:" >> ~/.dbt/profiles.yml
             echo "      type: snowflake" >> ~/.dbt/profiles.yml
-            echo "      account: ${{ secrets.DEV_SNOWFLAKE_ACCOUNT }}" >> ~/.dbt/profiles.yml
-            echo "      user: ${{ secrets.DEV_SNOWFLAKE_USER }}" >> ~/.dbt/profiles.yml
-            echo "      password: ${{ secrets.DEV_SNOWFLAKE_PASSWORD }}" >> ~/.dbt/profiles.yml
-            echo "      role: ${{ secrets.DEV_SNOWFLAKE_ROLE }}" >> ~/.dbt/profiles.yml
-            echo "      database: ${{ secrets.DEV_SNOWFLAKE_DATABASE }}" >> ~/.dbt/profiles.yml
-            echo "      warehouse: ${{ secrets.DEV_SNOWFLAKE_WAREHOUSE }}" >> ~/.dbt/profiles.yml
-            echo "      schema: ${{ secrets.DEV_SNOWFLAKE_SCHEMA }}" >> ~/.dbt/profiles.yml
+            echo "      account: ${{ secrets.PRODUCTION_SNOWFLAKE_ACCOUNT }}" >> ~/.dbt/profiles.yml
+            echo "      user: ${{ secrets.PRODUCTION_SNOWFLAKE_USER }}" >> ~/.dbt/profiles.yml
+            echo "      password: ${{ secrets.PRODUCTION_SNOWFLAKE_PASSWORD }}" >> ~/.dbt/profiles.yml
+            echo "      role: ${{ secrets.PRODUCTION_SNOWFLAKE_ROLE }}" >> ~/.dbt/profiles.yml
+            echo "      database: ${{ secrets.PRODUCTION_SNOWFLAKE_DATABASE }}" >> ~/.dbt/profiles.yml
+            echo "      warehouse: ${{ secrets.PRODUCTION_SNOWFLAKE_WAREHOUSE }}" >> ~/.dbt/profiles.yml
+            echo "      schema: ${{ secrets.PRODUCTION_SNOWFLAKE_SCHEMA }}" >> ~/.dbt/profiles.yml
   
         - name: Run dbt
           env:
-            DBT_PROFILES_DIR: /Users/henygafsi/Documents/GitHub/sfk_cicd_demo/actions-runner/_work/sfk_cicd_demo/sfk_cicd_demo/dbt_project_demo/profiles.yml
+            DBT_PROFILES_DIR: ~/.dbt
           run: |
-              dbt debug --profiles-dir . --profile $DBT_PROFILE --target dev
-              dbt run --select dbt_project_demo
+            cd $DBT_FOLDER
+            dbt deps
+            dbt compile --profiles-dir . --profile $DBT_PROFILE
+            dbt run-operation my_first_dbt_model --profiles-dir . --profile $DBT_PROFILE --target DEV
+            dbt run 
