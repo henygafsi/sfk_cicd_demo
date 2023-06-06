@@ -1,0 +1,13 @@
+dbt_ci_profile:
+  target: dev
+  outputs:
+    dev:
+      account: 'ye35211.eu-central-1'
+      user: CMA_DBT_USER
+      password: Tunisie23!
+      role: accountadmin
+      database: CMA_RAW_DEV
+      schema: STAGING
+      threads: 200
+      type: snowflake
+      warehouse: compute_wh
