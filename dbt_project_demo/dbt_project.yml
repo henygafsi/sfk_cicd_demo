@@ -34,5 +34,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_project_demo:
     # Config indicated by + and applies to all files under models/example/
+    analytics:
+      database: CMA_RAW_DEV
     example:
       +materialized: view
