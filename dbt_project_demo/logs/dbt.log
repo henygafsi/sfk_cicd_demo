@@ -2088,3 +2088,1011 @@ where id = 1
 [0m11:11:15.390454 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 [0m11:11:15.391080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11baf43d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a489400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aaa0c70>]}
 [0m11:11:15.391713 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-06-18 12:13:03.326291 | 8c1dd633-65cb-4f06-b952-2b2131335015 ==============================
+[0m12:13:03.326291 [info ] [MainThread]: Running with dbt=1.4.1
+[0m12:13:03.329061 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m12:13:03.329503 [debug] [MainThread]: Tracking: tracking
+[0m12:13:03.330257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121eac100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121eacdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121eacd00>]}
+[0m12:13:03.469756 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:13:03.474373 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:13:03.483408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c1dd633-65cb-4f06-b952-2b2131335015', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1224f00d0>]}
+[0m12:13:03.494568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c1dd633-65cb-4f06-b952-2b2131335015', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121fe07f0>]}
+[0m12:13:03.496398 [debug] [MainThread]: Acquiring new snowflake connection 'macro_stage_external_sources'
+[0m12:13:03.515705 [info ] [MainThread]: No external sources selected
+[0m12:13:03.516680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121eac100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12261c4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12261c550>]}
+[0m12:13:03.517159 [debug] [MainThread]: Flushing usage events
+[0m12:13:04.024708 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
+
+
+============================== 2023-06-18 12:27:44.718610 | 840e0cd6-acf2-4755-b31c-a721516066b1 ==============================
+[0m12:27:44.718610 [info ] [MainThread]: Running with dbt=1.4.1
+[0m12:27:44.721235 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m12:27:44.721603 [debug] [MainThread]: Tracking: tracking
+[0m12:27:44.722275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1169a1250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1169a1df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1169a1d00>]}
+[0m12:27:44.886626 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:27:44.887017 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:27:44.895097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '840e0cd6-acf2-4755-b31c-a721516066b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116da60d0>]}
+[0m12:27:44.907130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '840e0cd6-acf2-4755-b31c-a721516066b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116ad1760>]}
+[0m12:27:44.908927 [debug] [MainThread]: Acquiring new snowflake connection 'macro_stage_external_sources'
+[0m12:27:44.927752 [info ] [MainThread]: No external sources selected
+[0m12:27:44.928892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1169a1250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1170dd5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1170dd640>]}
+[0m12:27:44.929424 [debug] [MainThread]: Flushing usage events
+[0m12:27:45.419865 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
+
+
+============================== 2023-06-18 12:27:52.625291 | c23fe65e-8577-4866-a385-a0c1846b3f52 ==============================
+[0m12:27:52.625291 [info ] [MainThread]: Running with dbt=1.4.1
+[0m12:27:52.627496 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:27:52.627778 [debug] [MainThread]: Tracking: tracking
+[0m12:27:52.628293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120f6c250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120f6cdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120f6cd00>]}
+[0m12:27:52.768587 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:27:52.768899 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:27:52.777222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c23fe65e-8577-4866-a385-a0c1846b3f52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1213720d0>]}
+[0m12:27:52.790891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c23fe65e-8577-4866-a385-a0c1846b3f52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1210a08e0>]}
+[0m12:27:52.791312 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 537 macros, 1 operation, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:27:52.791623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c23fe65e-8577-4866-a385-a0c1846b3f52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1210a06d0>]}
+[0m12:27:52.793102 [info ] [MainThread]: 
+[0m12:27:52.794971 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:27:52.796335 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CMA_RAW_DEV'
+[0m12:27:52.816344 [debug] [ThreadPool]: Using snowflake connection "list_CMA_RAW_DEV"
+[0m12:27:52.816752 [debug] [ThreadPool]: On list_CMA_RAW_DEV: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "dev", "connection_name": "list_CMA_RAW_DEV"} */
+show terse schemas in database CMA_RAW_DEV
+    limit 10000
+[0m12:27:52.817100 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:27:53.911599 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1 seconds
+[0m12:27:53.913892 [debug] [ThreadPool]: On list_CMA_RAW_DEV: Close
+[0m12:27:54.005365 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CMA_RAW_DEV_STAGING'
+[0m12:27:54.014474 [debug] [ThreadPool]: Using snowflake connection "list_CMA_RAW_DEV_STAGING"
+[0m12:27:54.014833 [debug] [ThreadPool]: On list_CMA_RAW_DEV_STAGING: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "dev", "connection_name": "list_CMA_RAW_DEV_STAGING"} */
+show terse objects in CMA_RAW_DEV.STAGING
+[0m12:27:54.015076 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:27:54.492055 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0 seconds
+[0m12:27:54.494021 [debug] [ThreadPool]: On list_CMA_RAW_DEV_STAGING: Close
+[0m12:27:54.597498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c23fe65e-8577-4866-a385-a0c1846b3f52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1216ed0d0>]}
+[0m12:27:54.599041 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m12:27:54.599528 [info ] [MainThread]: 
+[0m12:27:54.634932 [debug] [Thread-1  ]: Began running node model.dbt_project_demo.my_first_dbt_model
+[0m12:27:54.635821 [info ] [Thread-1  ]: 1 of 2 START sql table model STAGING.my_first_dbt_model ........................ [RUN]
+[0m12:27:54.637372 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt_project_demo.my_first_dbt_model'
+[0m12:27:54.638258 [debug] [Thread-1  ]: Began compiling node model.dbt_project_demo.my_first_dbt_model
+[0m12:27:54.646368 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project_demo.my_first_dbt_model"
+[0m12:27:54.648443 [debug] [Thread-1  ]: Timing info for model.dbt_project_demo.my_first_dbt_model (compile): 2023-06-18 12:27:54.638790 => 2023-06-18 12:27:54.648230
+[0m12:27:54.649335 [debug] [Thread-1  ]: Began executing node model.dbt_project_demo.my_first_dbt_model
+[0m12:27:54.806035 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_project_demo.my_first_dbt_model"
+[0m12:27:54.807253 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_project_demo.my_first_dbt_model"
+[0m12:27:54.807508 [debug] [Thread-1  ]: On model.dbt_project_demo.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "dev", "node_id": "model.dbt_project_demo.my_first_dbt_model"} */
+create or replace transient table CMA_RAW_DEV.STAGING.my_first_dbt_model  as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below 
+*/
+
+/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below 
+*/
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m12:27:54.807742 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:27:56.316428 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:27:56.347159 [debug] [Thread-1  ]: Timing info for model.dbt_project_demo.my_first_dbt_model (execute): 2023-06-18 12:27:54.649968 => 2023-06-18 12:27:56.347099
+[0m12:27:56.347553 [debug] [Thread-1  ]: On model.dbt_project_demo.my_first_dbt_model: Close
+[0m12:27:56.444071 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c23fe65e-8577-4866-a385-a0c1846b3f52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121e463a0>]}
+[0m12:27:56.445012 [info ] [Thread-1  ]: 1 of 2 OK created sql table model STAGING.my_first_dbt_model ................... [[32mSUCCESS 1[0m in 1.81s]
+[0m12:27:56.448329 [debug] [Thread-1  ]: Finished running node model.dbt_project_demo.my_first_dbt_model
+[0m12:27:56.451335 [debug] [Thread-3  ]: Began running node model.dbt_project_demo.my_second_dbt_model
+[0m12:27:56.452373 [info ] [Thread-3  ]: 2 of 2 START sql view model STAGING.my_second_dbt_model ........................ [RUN]
+[0m12:27:56.454532 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.dbt_project_demo.my_second_dbt_model'
+[0m12:27:56.455278 [debug] [Thread-3  ]: Began compiling node model.dbt_project_demo.my_second_dbt_model
+[0m12:27:56.462688 [debug] [Thread-3  ]: Writing injected SQL for node "model.dbt_project_demo.my_second_dbt_model"
+[0m12:27:56.464084 [debug] [Thread-3  ]: Timing info for model.dbt_project_demo.my_second_dbt_model (compile): 2023-06-18 12:27:56.455809 => 2023-06-18 12:27:56.463890
+[0m12:27:56.465106 [debug] [Thread-3  ]: Began executing node model.dbt_project_demo.my_second_dbt_model
+[0m12:27:56.517163 [debug] [Thread-3  ]: Writing runtime sql for node "model.dbt_project_demo.my_second_dbt_model"
+[0m12:27:56.519479 [debug] [Thread-3  ]: Using snowflake connection "model.dbt_project_demo.my_second_dbt_model"
+[0m12:27:56.519939 [debug] [Thread-3  ]: On model.dbt_project_demo.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "dev", "node_id": "model.dbt_project_demo.my_second_dbt_model"} */
+create or replace   view CMA_RAW_DEV.STAGING.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from CMA_RAW_DEV.STAGING.my_first_dbt_model
+where id = 1
+  );
+[0m12:27:56.520303 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m12:27:57.158102 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m12:27:57.160614 [debug] [Thread-3  ]: Timing info for model.dbt_project_demo.my_second_dbt_model (execute): 2023-06-18 12:27:56.465717 => 2023-06-18 12:27:57.160557
+[0m12:27:57.160919 [debug] [Thread-3  ]: On model.dbt_project_demo.my_second_dbt_model: Close
+[0m12:27:57.255563 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c23fe65e-8577-4866-a385-a0c1846b3f52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1224308b0>]}
+[0m12:27:57.256263 [info ] [Thread-3  ]: 2 of 2 OK created sql view model STAGING.my_second_dbt_model ................... [[32mSUCCESS 1[0m in 0.80s]
+[0m12:27:57.256743 [debug] [Thread-3  ]: Finished running node model.dbt_project_demo.my_second_dbt_model
+[0m12:27:57.266288 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:27:57.267289 [info ] [MainThread]: 
+[0m12:27:57.268359 [info ] [MainThread]: Running 1 on-run-end hook
+[0m12:27:57.294131 [info ] [MainThread]: Running dbt Constraints
+[0m12:27:57.407701 [info ] [MainThread]: Finished dbt Constraints
+[0m12:27:57.408538 [debug] [MainThread]: Writing injected SQL for node "operation.dbt_constraints.dbt_constraints-on-run-end-0"
+[0m12:27:57.411252 [info ] [MainThread]: 1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m12:27:57.412116 [info ] [MainThread]: 1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m12:27:57.412711 [info ] [MainThread]: 
+[0m12:27:57.416003 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:27:57.416517 [debug] [MainThread]: Connection 'model.dbt_project_demo.my_first_dbt_model' was properly closed.
+[0m12:27:57.416983 [debug] [MainThread]: Connection 'model.dbt_project_demo.my_second_dbt_model' was properly closed.
+[0m12:27:57.417430 [info ] [MainThread]: 
+[0m12:27:57.418271 [info ] [MainThread]: Finished running 1 table model, 1 view model, 1 hook in 0 hours 0 minutes and 4.62 seconds (4.62s).
+[0m12:27:57.419235 [debug] [MainThread]: Command end result
+[0m12:27:57.437026 [info ] [MainThread]: 
+[0m12:27:57.437699 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:27:57.438402 [info ] [MainThread]: 
+[0m12:27:57.439197 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m12:27:57.439905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12166fe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121628f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1216de4c0>]}
+[0m12:27:57.440493 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-06-18 12:29:51.164713 | 3f3e658b-a1f8-4a0b-8fdc-79f52ce5c5a6 ==============================
+[0m12:29:51.164713 [info ] [MainThread]: Running with dbt=1.4.1
+[0m12:29:51.167480 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'vars': 'ext_full_refresh: true', 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m12:29:51.167904 [debug] [MainThread]: Tracking: tracking
+[0m12:29:51.168475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f68100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f68df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f68d00>]}
+[0m12:29:51.252252 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m12:29:51.252771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3f3e658b-a1f8-4a0b-8fdc-79f52ce5c5a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f68bb0>]}
+[0m12:29:52.724500 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m12:29:52.739370 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m12:29:52.882245 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'test_model' in the 'models' section of file 'models/example/schema.yml'
+[0m12:29:52.942009 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_project_demo.unique_test_model_id.0af54df8e8' (models/example/schema.yml) depends on a node named 'test_model' in package '' which was not found
+[0m12:29:52.942602 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_project_demo.not_null_test_model_id.2ab61e5d0d' (models/example/schema.yml) depends on a node named 'test_model' in package '' which was not found
+[0m12:29:52.993689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3f3e658b-a1f8-4a0b-8fdc-79f52ce5c5a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11837a490>]}
+[0m12:29:53.006288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3f3e658b-a1f8-4a0b-8fdc-79f52ce5c5a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1182d56a0>]}
+[0m12:29:53.008382 [debug] [MainThread]: Acquiring new snowflake connection 'macro_stage_external_sources'
+[0m12:29:53.028388 [info ] [MainThread]: No external sources selected
+[0m12:29:53.029344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f68100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1186224f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118622550>]}
+[0m12:29:53.029736 [debug] [MainThread]: Flushing usage events
+[0m12:29:53.568003 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
+
+
+============================== 2023-06-18 12:30:35.321689 | 41779f7d-b00a-4398-b3ef-09ccf8a97b0c ==============================
+[0m12:30:35.321689 [info ] [MainThread]: Running with dbt=1.4.1
+[0m12:30:35.324554 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'macro': 'stage_external_sources', 'args': 'select: demo', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m12:30:35.324996 [debug] [MainThread]: Tracking: tracking
+[0m12:30:35.325516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dcd8100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dcd8df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dcd8d00>]}
+[0m12:30:35.400826 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m12:30:35.401338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '41779f7d-b00a-4398-b3ef-09ccf8a97b0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dcd86d0>]}
+[0m12:30:36.911261 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m12:30:36.924066 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m12:30:37.052835 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'test_model' in the 'models' section of file 'models/example/schema.yml'
+[0m12:30:37.128540 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_project_demo.unique_test_model_id.0af54df8e8' (models/example/schema.yml) depends on a node named 'test_model' in package '' which was not found
+[0m12:30:37.129059 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_project_demo.not_null_test_model_id.2ab61e5d0d' (models/example/schema.yml) depends on a node named 'test_model' in package '' which was not found
+[0m12:30:37.176287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '41779f7d-b00a-4398-b3ef-09ccf8a97b0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e2fab50>]}
+[0m12:30:37.191860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41779f7d-b00a-4398-b3ef-09ccf8a97b0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e2ed040>]}
+[0m12:30:37.194638 [debug] [MainThread]: Acquiring new snowflake connection 'macro_stage_external_sources'
+[0m12:30:37.221050 [info ] [MainThread]: No external sources selected
+[0m12:30:37.222288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dcd8100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e3a34f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e3a3550>]}
+[0m12:30:37.222886 [debug] [MainThread]: Flushing usage events
+[0m12:30:37.679046 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
+
+
+============================== 2023-06-18 12:53:24.948297 | 2a28101b-720e-42b4-8adc-9eeefa0e8c30 ==============================
+[0m12:53:24.948297 [info ] [MainThread]: Running with dbt=1.4.1
+[0m12:53:24.951917 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'macro': 'stage_external_sources', 'args': 'select: demo', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m12:53:24.952381 [debug] [MainThread]: Tracking: tracking
+[0m12:53:24.953130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11568e250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11568edf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11568ed00>]}
+[0m12:53:25.129092 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:53:25.129495 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:53:25.137280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2a28101b-720e-42b4-8adc-9eeefa0e8c30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115cb00d0>]}
+[0m12:53:25.150680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a28101b-720e-42b4-8adc-9eeefa0e8c30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1156a4ee0>]}
+[0m12:53:25.152336 [debug] [MainThread]: Acquiring new snowflake connection 'macro_stage_external_sources'
+[0m12:53:25.170319 [info ] [MainThread]: No external sources selected
+[0m12:53:25.171226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11568e250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115ddd5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115ddd640>]}
+[0m12:53:25.171697 [debug] [MainThread]: Flushing usage events
+[0m12:53:25.692957 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
+
+
+============================== 2023-06-18 12:54:31.121838 | 115d6d06-92a0-4bc4-beef-b10bdb07436a ==============================
+[0m12:54:31.121838 [info ] [MainThread]: Running with dbt=1.4.1
+[0m12:54:31.124549 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'vars': 'ext_full_refresh: true', 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m12:54:31.125024 [debug] [MainThread]: Tracking: tracking
+[0m12:54:31.125583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11529a250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11529adf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11529ad00>]}
+[0m12:54:31.191619 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m12:54:31.192089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '115d6d06-92a0-4bc4-beef-b10bdb07436a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11529aa00>]}
+[0m12:54:32.571974 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m12:54:32.590647 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m12:54:32.723235 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'test_model' in the 'models' section of file 'models/example/schema.yml'
+[0m12:54:32.780503 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_project_demo.unique_test_model_id.0af54df8e8' (models/example/schema.yml) depends on a node named 'test_model' in package '' which was not found
+[0m12:54:32.781212 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_project_demo.not_null_test_model_id.2ab61e5d0d' (models/example/schema.yml) depends on a node named 'test_model' in package '' which was not found
+[0m12:54:32.834275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '115d6d06-92a0-4bc4-beef-b10bdb07436a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1158ffd30>]}
+[0m12:54:32.847597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '115d6d06-92a0-4bc4-beef-b10bdb07436a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115891fd0>]}
+[0m12:54:32.854660 [debug] [MainThread]: Acquiring new snowflake connection 'macro_stage_external_sources'
+[0m12:54:32.879075 [info ] [MainThread]: No external sources selected
+[0m12:54:32.880101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11529a250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1159664f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115966550>]}
+[0m12:54:32.880633 [debug] [MainThread]: Flushing usage events
+[0m12:54:33.327864 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
+
+
+============================== 2023-06-18 18:39:11.485676 | e9967277-e6b7-49ab-9ff3-ad8004a14c6a ==============================
+[0m18:39:11.485676 [info ] [MainThread]: Running with dbt=1.4.1
+[0m18:39:11.489723 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m18:39:11.490415 [debug] [MainThread]: Tracking: tracking
+[0m18:39:11.491920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1235f7190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1235f7e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1235f7af0>]}
+[0m18:39:11.624502 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m18:39:11.625356 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m18:39:11.625976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e9967277-e6b7-49ab-9ff3-ad8004a14c6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12360d070>]}
+[0m18:39:11.887019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123915c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12393e4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12393e520>]}
+[0m18:39:11.893491 [debug] [MainThread]: Flushing usage events
+[0m18:39:12.513765 [error] [MainThread]: Encountered an error:
+Compilation Error
+  unexpected char '@' at 340
+    line 9
+      '@' || {{ stage_name }} || '/' || {{ directory }}  -- Form the stage path dynamically
+
+
+============================== 2023-06-18 18:59:54.082520 | b0374fad-7bdd-4fc5-aa2d-61c7ae0b559f ==============================
+[0m18:59:54.082520 [info ] [MainThread]: Running with dbt=1.4.1
+[0m18:59:54.085824 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m18:59:54.086333 [debug] [MainThread]: Tracking: tracking
+[0m18:59:54.087017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e677100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e677df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e677a60>]}
+[0m18:59:54.183329 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m18:59:54.183936 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m18:59:54.184419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b0374fad-7bdd-4fc5-aa2d-61c7ae0b559f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e697df0>]}
+[0m18:59:56.296058 [debug] [MainThread]: 1603: static parser failed on example/test.sql
+[0m18:59:56.328008 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/test.sql
+[0m18:59:56.331772 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m18:59:56.336116 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m18:59:56.339745 [debug] [MainThread]: 1603: static parser failed on example/table_parq.sql
+[0m18:59:56.345224 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/table_parq.sql
+[0m18:59:56.347135 [debug] [MainThread]: 1603: static parser failed on example/testtt.sql
+[0m18:59:56.352301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ec41340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e77cfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e77cee0>]}
+[0m18:59:56.352979 [debug] [MainThread]: Flushing usage events
+[0m18:59:56.872247 [error] [MainThread]: Encountered an error:
+Compilation Error in model testtt (models/example/testtt.sql)
+  expected token ':', got '}'
+    line 13
+      {{ generate_parquet({{ ref('my_first_dbt_model') }}, 'my_tsoutput_table', partition_by_col='id') }}
+
+
+============================== 2023-06-18 19:03:33.387127 | df5f3444-1d13-40a3-8232-7619825bba75 ==============================
+[0m19:03:33.387127 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:03:33.390256 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m19:03:33.390687 [debug] [MainThread]: Tracking: tracking
+[0m19:03:33.391348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b035190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b035e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b035af0>]}
+[0m19:03:33.488325 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m19:03:33.488866 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m19:03:33.489322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'df5f3444-1d13-40a3-8232-7619825bba75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b052940>]}
+[0m19:03:35.684866 [debug] [MainThread]: 1603: static parser failed on example/test.sql
+[0m19:03:35.715309 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/test.sql
+[0m19:03:35.719189 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m19:03:35.723960 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m19:03:35.728021 [debug] [MainThread]: 1603: static parser failed on example/table_parq.sql
+[0m19:03:35.734758 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/table_parq.sql
+[0m19:03:35.736790 [debug] [MainThread]: 1603: static parser failed on example/testtt.sql
+[0m19:03:35.743984 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/testtt.sql
+[0m19:03:35.828180 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'test_model' in the 'models' section of file 'models/staging/schema.yml'
+[0m19:03:35.873587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b6d74c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b717cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b6b7850>]}
+[0m19:03:35.875063 [debug] [MainThread]: Flushing usage events
+[0m19:03:36.459742 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two schema.yml entries for the same resource named my_first_dbt_model. Resources and their associated columns may only be described a single time. To fix this, remove the resource entry for my_first_dbt_model in one of these files:
+   - models/example/schema.yml
+  models/staging/schema.yml
+
+
+============================== 2023-06-18 19:04:49.824909 | af4d9fa3-a74d-4b30-995c-e99233550c0c ==============================
+[0m19:04:49.824909 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:04:49.828699 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m19:04:49.829192 [debug] [MainThread]: Tracking: tracking
+[0m19:04:49.829956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1239bc190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1239bce80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1239bcaf0>]}
+[0m19:04:49.920744 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m19:04:49.930306 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m19:04:49.931592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'af4d9fa3-a74d-4b30-995c-e99233550c0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1239d3310>]}
+[0m19:04:52.087951 [debug] [MainThread]: 1603: static parser failed on example/test.sql
+[0m19:04:52.118510 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/test.sql
+[0m19:04:52.121601 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m19:04:52.126611 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m19:04:52.130760 [debug] [MainThread]: 1603: static parser failed on example/table_parq.sql
+[0m19:04:52.136752 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/table_parq.sql
+[0m19:04:52.138622 [debug] [MainThread]: 1603: static parser failed on example/testtt.sql
+[0m19:04:52.150340 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/testtt.sql
+[0m19:04:52.235668 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'test_model' in the 'models' section of file 'models/example/schema.yml'
+[0m19:04:52.313700 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_project_demo.unique_test_model_id.0af54df8e8' (models/example/schema.yml) depends on a node named 'test_model' in package '' which was not found
+[0m19:04:52.314563 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_project_demo.not_null_test_model_id.2ab61e5d0d' (models/example/schema.yml) depends on a node named 'test_model' in package '' which was not found
+[0m19:04:52.376585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'af4d9fa3-a74d-4b30-995c-e99233550c0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1241790d0>]}
+[0m19:04:52.395321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'af4d9fa3-a74d-4b30-995c-e99233550c0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1240c4c70>]}
+[0m19:04:52.396063 [info ] [MainThread]: Found 5 models, 4 tests, 0 snapshots, 0 analyses, 537 macros, 1 operation, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m19:04:52.396847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'af4d9fa3-a74d-4b30-995c-e99233550c0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1239e3790>]}
+[0m19:04:52.399268 [info ] [MainThread]: 
+[0m19:04:52.402959 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:04:52.405222 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CMA_RAW_PRD'
+[0m19:04:52.420348 [debug] [ThreadPool]: Using snowflake connection "list_CMA_RAW_PRD"
+[0m19:04:52.420953 [debug] [ThreadPool]: On list_CMA_RAW_PRD: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "connection_name": "list_CMA_RAW_PRD"} */
+show terse schemas in database CMA_RAW_PRD
+    limit 10000
+[0m19:04:52.421371 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:04:53.713291 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1 seconds
+[0m19:04:53.718389 [debug] [ThreadPool]: On list_CMA_RAW_PRD: Close
+[0m19:04:53.826754 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CMA_RAW_PRD_ANALYTICS'
+[0m19:04:53.845108 [debug] [ThreadPool]: Using snowflake connection "list_CMA_RAW_PRD_ANALYTICS"
+[0m19:04:53.845612 [debug] [ThreadPool]: On list_CMA_RAW_PRD_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "connection_name": "list_CMA_RAW_PRD_ANALYTICS"} */
+show terse objects in CMA_RAW_PRD.ANALYTICS
+[0m19:04:53.846012 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:04:54.444177 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1 seconds
+[0m19:04:54.446200 [debug] [ThreadPool]: On list_CMA_RAW_PRD_ANALYTICS: Close
+[0m19:04:54.544365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'af4d9fa3-a74d-4b30-995c-e99233550c0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1240c4d00>]}
+[0m19:04:54.545373 [info ] [MainThread]: Concurrency: 200 threads (target='prd')
+[0m19:04:54.545809 [info ] [MainThread]: 
+[0m19:04:54.644223 [debug] [Thread-1  ]: Began running node model.dbt_project_demo.my_first_dbt_model
+[0m19:04:54.644695 [debug] [Thread-2  ]: Began running node model.dbt_project_demo.table_parq
+[0m19:04:54.645056 [debug] [Thread-3  ]: Began running node model.dbt_project_demo.test
+[0m19:04:54.645410 [debug] [Thread-4  ]: Began running node model.dbt_project_demo.testtt
+[0m19:04:54.645922 [info ] [Thread-1  ]: 1 of 5 START sql table model ANALYTICS.my_first_dbt_model ...................... [RUN]
+[0m19:04:54.646999 [info ] [Thread-2  ]: 2 of 5 START sql view model ANALYTICS.table_parq ............................... [RUN]
+[0m19:04:54.647790 [info ] [Thread-3  ]: 3 of 5 START sql view model ANALYTICS.test ..................................... [RUN]
+[0m19:04:54.648591 [info ] [Thread-4  ]: 4 of 5 START sql table model ANALYTICS.testtt .................................. [RUN]
+[0m19:04:54.649718 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt_project_demo.my_first_dbt_model'
+[0m19:04:54.650575 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.dbt_project_demo.table_parq'
+[0m19:04:54.651526 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.dbt_project_demo.test'
+[0m19:04:54.652493 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.dbt_project_demo.testtt'
+[0m19:04:54.653194 [debug] [Thread-1  ]: Began compiling node model.dbt_project_demo.my_first_dbt_model
+[0m19:04:54.653614 [debug] [Thread-2  ]: Began compiling node model.dbt_project_demo.table_parq
+[0m19:04:54.654150 [debug] [Thread-3  ]: Began compiling node model.dbt_project_demo.test
+[0m19:04:54.654655 [debug] [Thread-4  ]: Began compiling node model.dbt_project_demo.testtt
+[0m19:04:54.661770 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project_demo.my_first_dbt_model"
+[0m19:04:54.680375 [debug] [Thread-2  ]: Timing info for model.dbt_project_demo.table_parq (compile): 2023-06-18 19:04:54.662377 => 2023-06-18 19:04:54.680272
+[0m19:04:54.679500 [debug] [Thread-4  ]: Writing injected SQL for node "model.dbt_project_demo.testtt"
+[0m19:04:54.680919 [debug] [Thread-3  ]: Timing info for model.dbt_project_demo.test (compile): 2023-06-18 19:04:54.666707 => 2023-06-18 19:04:54.680835
+[0m19:04:54.683527 [debug] [Thread-1  ]: Timing info for model.dbt_project_demo.my_first_dbt_model (compile): 2023-06-18 19:04:54.655225 => 2023-06-18 19:04:54.683372
+[0m19:04:54.686137 [debug] [Thread-1  ]: Began executing node model.dbt_project_demo.my_first_dbt_model
+[0m19:04:54.698902 [debug] [Thread-4  ]: Timing info for model.dbt_project_demo.testtt (compile): 2023-06-18 19:04:54.674761 => 2023-06-18 19:04:54.698750
+[0m19:04:54.700109 [debug] [Thread-4  ]: Began executing node model.dbt_project_demo.testtt
+[0m19:04:54.758537 [debug] [Thread-4  ]: Writing runtime sql for node "model.dbt_project_demo.testtt"
+[0m19:04:54.773402 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_project_demo.my_first_dbt_model"
+[0m19:04:54.776741 [debug] [Thread-4  ]: Using snowflake connection "model.dbt_project_demo.testtt"
+[0m19:04:54.777498 [debug] [Thread-4  ]: On model.dbt_project_demo.testtt: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "node_id": "model.dbt_project_demo.testtt"} */
+create or replace transient table CMA_RAW_PRD.ANALYTICS.testtt  as
+        (
+
+WITH staging_table AS (
+    SELECT
+        column1,
+        column2,
+        column3
+    FROM
+        my_source_table
+)
+
+
+    
+    SELECT *
+    FROM staging_table
+
+        );
+[0m19:04:54.778569 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_project_demo.my_first_dbt_model"
+[0m19:04:54.779048 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m19:04:54.780014 [debug] [Thread-1  ]: On model.dbt_project_demo.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "node_id": "model.dbt_project_demo.my_first_dbt_model"} */
+create or replace transient table CMA_RAW_PRD.ANALYTICS.my_first_dbt_model  as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below 
+*/
+
+/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below 
+*/
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m19:04:54.782060 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m19:04:54.789742 [debug] [Thread-2  ]: Compilation Error in model table_parq (models/example/table_parq.sql)
+  'create_tables_from_parquet' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m19:04:54.791399 [debug] [Thread-3  ]: Compilation Error in model test (models/example/test.sql)
+  'create_tables_from_parquet' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m19:04:54.792279 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af4d9fa3-a74d-4b30-995c-e99233550c0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123a32d60>]}
+[0m19:04:54.793245 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af4d9fa3-a74d-4b30-995c-e99233550c0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123dd07c0>]}
+[0m19:04:54.794211 [error] [Thread-2  ]: 2 of 5 ERROR creating sql view model ANALYTICS.table_parq ...................... [[31mERROR[0m in 0.14s]
+[0m19:04:54.795367 [error] [Thread-3  ]: 3 of 5 ERROR creating sql view model ANALYTICS.test ............................ [[31mERROR[0m in 0.14s]
+[0m19:04:54.797658 [debug] [Thread-2  ]: Finished running node model.dbt_project_demo.table_parq
+[0m19:04:54.798196 [debug] [Thread-3  ]: Finished running node model.dbt_project_demo.test
+[0m19:04:55.644198 [debug] [Thread-4  ]: Snowflake adapter: Snowflake query id: 01ad0e38-3201-d1a9-0000-f139000a1472
+[0m19:04:55.644732 [debug] [Thread-4  ]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'MY_SOURCE_TABLE' does not exist or not authorized.
+[0m19:04:55.645274 [debug] [Thread-4  ]: Timing info for model.dbt_project_demo.testtt (execute): 2023-06-18 19:04:54.728272 => 2023-06-18 19:04:55.645176
+[0m19:04:55.645670 [debug] [Thread-4  ]: On model.dbt_project_demo.testtt: Close
+[0m19:04:55.761052 [debug] [Thread-4  ]: Database Error in model testtt (models/example/testtt.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'MY_SOURCE_TABLE' does not exist or not authorized.
+  compiled Code at target/run/dbt_project_demo/models/example/testtt.sql
+[0m19:04:55.761895 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af4d9fa3-a74d-4b30-995c-e99233550c0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123db5040>]}
+[0m19:04:55.762599 [error] [Thread-4  ]: 4 of 5 ERROR creating sql table model ANALYTICS.testtt ......................... [[31mERROR[0m in 1.11s]
+[0m19:04:55.763195 [debug] [Thread-4  ]: Finished running node model.dbt_project_demo.testtt
+[0m19:04:56.482113 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m19:04:56.512717 [debug] [Thread-1  ]: Timing info for model.dbt_project_demo.my_first_dbt_model (execute): 2023-06-18 19:04:54.687924 => 2023-06-18 19:04:56.512637
+[0m19:04:56.513281 [debug] [Thread-1  ]: On model.dbt_project_demo.my_first_dbt_model: Close
+[0m19:04:56.629663 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af4d9fa3-a74d-4b30-995c-e99233550c0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123da3bb0>]}
+[0m19:04:56.630518 [info ] [Thread-1  ]: 1 of 5 OK created sql table model ANALYTICS.my_first_dbt_model ................. [[32mSUCCESS 1[0m in 1.98s]
+[0m19:04:56.631146 [debug] [Thread-1  ]: Finished running node model.dbt_project_demo.my_first_dbt_model
+[0m19:04:56.632686 [debug] [Thread-6  ]: Began running node model.dbt_project_demo.my_second_dbt_model
+[0m19:04:56.633387 [info ] [Thread-6  ]: 5 of 5 START sql view model ANALYTICS.my_second_dbt_model ...................... [RUN]
+[0m19:04:56.634388 [debug] [Thread-6  ]: Acquiring new snowflake connection 'model.dbt_project_demo.my_second_dbt_model'
+[0m19:04:56.634816 [debug] [Thread-6  ]: Began compiling node model.dbt_project_demo.my_second_dbt_model
+[0m19:04:56.640694 [debug] [Thread-6  ]: Writing injected SQL for node "model.dbt_project_demo.my_second_dbt_model"
+[0m19:04:56.644129 [debug] [Thread-6  ]: Timing info for model.dbt_project_demo.my_second_dbt_model (compile): 2023-06-18 19:04:56.635075 => 2023-06-18 19:04:56.643931
+[0m19:04:56.644807 [debug] [Thread-6  ]: Began executing node model.dbt_project_demo.my_second_dbt_model
+[0m19:04:56.682464 [debug] [Thread-6  ]: Writing runtime sql for node "model.dbt_project_demo.my_second_dbt_model"
+[0m19:04:56.683683 [debug] [Thread-6  ]: Using snowflake connection "model.dbt_project_demo.my_second_dbt_model"
+[0m19:04:56.684042 [debug] [Thread-6  ]: On model.dbt_project_demo.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "node_id": "model.dbt_project_demo.my_second_dbt_model"} */
+create or replace   view CMA_RAW_PRD.ANALYTICS.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from CMA_RAW_PRD.ANALYTICS.my_first_dbt_model
+where id = 1
+  );
+[0m19:04:56.684389 [debug] [Thread-6  ]: Opening a new connection, currently in state init
+[0m19:04:57.351761 [debug] [Thread-6  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m19:04:57.356015 [debug] [Thread-6  ]: Timing info for model.dbt_project_demo.my_second_dbt_model (execute): 2023-06-18 19:04:56.645279 => 2023-06-18 19:04:57.355926
+[0m19:04:57.356470 [debug] [Thread-6  ]: On model.dbt_project_demo.my_second_dbt_model: Close
+[0m19:04:57.455268 [debug] [Thread-6  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af4d9fa3-a74d-4b30-995c-e99233550c0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123da3070>]}
+[0m19:04:57.456122 [info ] [Thread-6  ]: 5 of 5 OK created sql view model ANALYTICS.my_second_dbt_model ................. [[32mSUCCESS 1[0m in 0.82s]
+[0m19:04:57.456760 [debug] [Thread-6  ]: Finished running node model.dbt_project_demo.my_second_dbt_model
+[0m19:04:57.468730 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:04:57.469922 [info ] [MainThread]: 
+[0m19:04:57.471507 [info ] [MainThread]: Running 1 on-run-end hook
+[0m19:04:57.478501 [info ] [MainThread]: Running dbt Constraints
+[0m19:04:57.549925 [info ] [MainThread]: Finished dbt Constraints
+[0m19:04:57.550530 [debug] [MainThread]: Writing injected SQL for node "operation.dbt_constraints.dbt_constraints-on-run-end-0"
+[0m19:04:57.552661 [info ] [MainThread]: 1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m19:04:57.553475 [info ] [MainThread]: 1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m19:04:57.554083 [info ] [MainThread]: 
+[0m19:04:57.555652 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:04:57.556116 [debug] [MainThread]: Connection 'model.dbt_project_demo.my_first_dbt_model' was properly closed.
+[0m19:04:57.556425 [debug] [MainThread]: Connection 'model.dbt_project_demo.table_parq' was properly closed.
+[0m19:04:57.556703 [debug] [MainThread]: Connection 'model.dbt_project_demo.test' was properly closed.
+[0m19:04:57.556973 [debug] [MainThread]: Connection 'model.dbt_project_demo.testtt' was properly closed.
+[0m19:04:57.557271 [debug] [MainThread]: Connection 'model.dbt_project_demo.my_second_dbt_model' was properly closed.
+[0m19:04:57.557904 [info ] [MainThread]: 
+[0m19:04:57.558535 [info ] [MainThread]: Finished running 3 view models, 2 table models, 1 hook in 0 hours 0 minutes and 5.16 seconds (5.16s).
+[0m19:04:57.559536 [debug] [MainThread]: Command end result
+[0m19:04:57.577917 [info ] [MainThread]: 
+[0m19:04:57.578479 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m19:04:57.578914 [info ] [MainThread]: 
+[0m19:04:57.579430 [error] [MainThread]: [33mCompilation Error in model table_parq (models/example/table_parq.sql)[0m
+[0m19:04:57.579906 [error] [MainThread]:   'create_tables_from_parquet' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m19:04:57.580334 [info ] [MainThread]: 
+[0m19:04:57.580792 [error] [MainThread]: [33mCompilation Error in model test (models/example/test.sql)[0m
+[0m19:04:57.581256 [error] [MainThread]:   'create_tables_from_parquet' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m19:04:57.581721 [info ] [MainThread]: 
+[0m19:04:57.582232 [error] [MainThread]: [33mDatabase Error in model testtt (models/example/testtt.sql)[0m
+[0m19:04:57.582845 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m19:04:57.583898 [error] [MainThread]:   Object 'MY_SOURCE_TABLE' does not exist or not authorized.
+[0m19:04:57.585095 [error] [MainThread]:   compiled Code at target/run/dbt_project_demo/models/example/testtt.sql
+[0m19:04:57.586078 [info ] [MainThread]: 
+[0m19:04:57.586607 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=3 SKIP=0 TOTAL=5
+[0m19:04:57.587183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c1e610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124e96880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124e968e0>]}
+[0m19:04:57.587864 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-06-18 19:05:34.739592 | d7bc32ae-7cda-44c8-898f-5dd80cdf5f37 ==============================
+[0m19:05:34.739592 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:05:34.743056 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m19:05:34.743538 [debug] [MainThread]: Tracking: tracking
+[0m19:05:34.744162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121a3b160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121a3be50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121a3bac0>]}
+[0m19:05:34.967569 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 0 files added, 0 files changed.
+[0m19:05:34.968101 [debug] [MainThread]: Partial parsing: deleted file: dbt_project_demo://models/example/testtt.sql
+[0m19:05:34.968404 [debug] [MainThread]: Partial parsing: deleted file: dbt_project_demo://models/example/test.sql
+[0m19:05:34.968822 [debug] [MainThread]: Partial parsing: deleted file: dbt_project_demo://models/example/table_parq.sql
+[0m19:05:34.990092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd7bc32ae-7cda-44c8-898f-5dd80cdf5f37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1220930d0>]}
+[0m19:05:35.007588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd7bc32ae-7cda-44c8-898f-5dd80cdf5f37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12201a220>]}
+[0m19:05:35.008286 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 537 macros, 1 operation, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m19:05:35.008768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd7bc32ae-7cda-44c8-898f-5dd80cdf5f37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122016ee0>]}
+[0m19:05:35.011083 [info ] [MainThread]: 
+[0m19:05:35.013464 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:05:35.015268 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CMA_RAW_PRD'
+[0m19:05:35.041863 [debug] [ThreadPool]: Using snowflake connection "list_CMA_RAW_PRD"
+[0m19:05:35.042582 [debug] [ThreadPool]: On list_CMA_RAW_PRD: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "connection_name": "list_CMA_RAW_PRD"} */
+show terse schemas in database CMA_RAW_PRD
+    limit 10000
+[0m19:05:35.043710 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:05:35.942197 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1 seconds
+[0m19:05:35.945733 [debug] [ThreadPool]: On list_CMA_RAW_PRD: Close
+[0m19:05:36.074636 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CMA_RAW_PRD_ANALYTICS'
+[0m19:05:36.085461 [debug] [ThreadPool]: Using snowflake connection "list_CMA_RAW_PRD_ANALYTICS"
+[0m19:05:36.086000 [debug] [ThreadPool]: On list_CMA_RAW_PRD_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "connection_name": "list_CMA_RAW_PRD_ANALYTICS"} */
+show terse objects in CMA_RAW_PRD.ANALYTICS
+[0m19:05:36.086382 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:05:36.819255 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1 seconds
+[0m19:05:36.822192 [debug] [ThreadPool]: On list_CMA_RAW_PRD_ANALYTICS: Close
+[0m19:05:36.913531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd7bc32ae-7cda-44c8-898f-5dd80cdf5f37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121a5e730>]}
+[0m19:05:36.914928 [info ] [MainThread]: Concurrency: 200 threads (target='prd')
+[0m19:05:36.915424 [info ] [MainThread]: 
+[0m19:05:37.019843 [debug] [Thread-1  ]: Began running node model.dbt_project_demo.my_first_dbt_model
+[0m19:05:37.020504 [info ] [Thread-1  ]: 1 of 2 START sql table model ANALYTICS.my_first_dbt_model ...................... [RUN]
+[0m19:05:37.021487 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt_project_demo.my_first_dbt_model'
+[0m19:05:37.021987 [debug] [Thread-1  ]: Began compiling node model.dbt_project_demo.my_first_dbt_model
+[0m19:05:37.026426 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project_demo.my_first_dbt_model"
+[0m19:05:37.028128 [debug] [Thread-1  ]: Timing info for model.dbt_project_demo.my_first_dbt_model (compile): 2023-06-18 19:05:37.022381 => 2023-06-18 19:05:37.027976
+[0m19:05:37.028666 [debug] [Thread-1  ]: Began executing node model.dbt_project_demo.my_first_dbt_model
+[0m19:05:37.084254 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_project_demo.my_first_dbt_model"
+[0m19:05:37.085854 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_project_demo.my_first_dbt_model"
+[0m19:05:37.086262 [debug] [Thread-1  ]: On model.dbt_project_demo.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "node_id": "model.dbt_project_demo.my_first_dbt_model"} */
+create or replace transient table CMA_RAW_PRD.ANALYTICS.my_first_dbt_model  as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below 
+*/
+
+/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below 
+*/
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m19:05:37.086567 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m19:05:38.590391 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m19:05:38.626005 [debug] [Thread-1  ]: Timing info for model.dbt_project_demo.my_first_dbt_model (execute): 2023-06-18 19:05:37.029069 => 2023-06-18 19:05:38.625920
+[0m19:05:38.626511 [debug] [Thread-1  ]: On model.dbt_project_demo.my_first_dbt_model: Close
+[0m19:05:38.728537 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7bc32ae-7cda-44c8-898f-5dd80cdf5f37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1229b83a0>]}
+[0m19:05:38.729459 [info ] [Thread-1  ]: 1 of 2 OK created sql table model ANALYTICS.my_first_dbt_model ................. [[32mSUCCESS 1[0m in 1.71s]
+[0m19:05:38.731879 [debug] [Thread-1  ]: Finished running node model.dbt_project_demo.my_first_dbt_model
+[0m19:05:38.733130 [debug] [Thread-3  ]: Began running node model.dbt_project_demo.my_second_dbt_model
+[0m19:05:38.734189 [info ] [Thread-3  ]: 2 of 2 START sql view model ANALYTICS.my_second_dbt_model ...................... [RUN]
+[0m19:05:38.735451 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.dbt_project_demo.my_second_dbt_model'
+[0m19:05:38.736177 [debug] [Thread-3  ]: Began compiling node model.dbt_project_demo.my_second_dbt_model
+[0m19:05:38.742282 [debug] [Thread-3  ]: Writing injected SQL for node "model.dbt_project_demo.my_second_dbt_model"
+[0m19:05:38.745311 [debug] [Thread-3  ]: Timing info for model.dbt_project_demo.my_second_dbt_model (compile): 2023-06-18 19:05:38.736541 => 2023-06-18 19:05:38.745067
+[0m19:05:38.745984 [debug] [Thread-3  ]: Began executing node model.dbt_project_demo.my_second_dbt_model
+[0m19:05:38.814485 [debug] [Thread-3  ]: Writing runtime sql for node "model.dbt_project_demo.my_second_dbt_model"
+[0m19:05:38.816398 [debug] [Thread-3  ]: Using snowflake connection "model.dbt_project_demo.my_second_dbt_model"
+[0m19:05:38.817068 [debug] [Thread-3  ]: On model.dbt_project_demo.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "node_id": "model.dbt_project_demo.my_second_dbt_model"} */
+create or replace   view CMA_RAW_PRD.ANALYTICS.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from CMA_RAW_PRD.ANALYTICS.my_first_dbt_model
+where id = 1
+  );
+[0m19:05:38.817684 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m19:05:39.508996 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m19:05:39.513030 [debug] [Thread-3  ]: Timing info for model.dbt_project_demo.my_second_dbt_model (execute): 2023-06-18 19:05:38.746388 => 2023-06-18 19:05:39.512919
+[0m19:05:39.513476 [debug] [Thread-3  ]: On model.dbt_project_demo.my_second_dbt_model: Close
+[0m19:05:39.605119 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7bc32ae-7cda-44c8-898f-5dd80cdf5f37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122f182b0>]}
+[0m19:05:39.605861 [info ] [Thread-3  ]: 2 of 2 OK created sql view model ANALYTICS.my_second_dbt_model ................. [[32mSUCCESS 1[0m in 0.87s]
+[0m19:05:39.606436 [debug] [Thread-3  ]: Finished running node model.dbt_project_demo.my_second_dbt_model
+[0m19:05:39.616581 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:05:39.617377 [info ] [MainThread]: 
+[0m19:05:39.618927 [info ] [MainThread]: Running 1 on-run-end hook
+[0m19:05:39.640104 [info ] [MainThread]: Running dbt Constraints
+[0m19:05:39.714815 [info ] [MainThread]: Finished dbt Constraints
+[0m19:05:39.715510 [debug] [MainThread]: Writing injected SQL for node "operation.dbt_constraints.dbt_constraints-on-run-end-0"
+[0m19:05:39.717757 [info ] [MainThread]: 1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m19:05:39.718502 [info ] [MainThread]: 1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m19:05:39.719079 [info ] [MainThread]: 
+[0m19:05:39.720448 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:05:39.721043 [debug] [MainThread]: Connection 'model.dbt_project_demo.my_first_dbt_model' was properly closed.
+[0m19:05:39.721372 [debug] [MainThread]: Connection 'model.dbt_project_demo.my_second_dbt_model' was properly closed.
+[0m19:05:39.721798 [info ] [MainThread]: 
+[0m19:05:39.722364 [info ] [MainThread]: Finished running 1 table model, 1 view model, 1 hook in 0 hours 0 minutes and 4.71 seconds (4.71s).
+[0m19:05:39.722996 [debug] [MainThread]: Command end result
+[0m19:05:39.737101 [info ] [MainThread]: 
+[0m19:05:39.737644 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:05:39.738104 [info ] [MainThread]: 
+[0m19:05:39.738557 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m19:05:39.739099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110cad370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12291b6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111556190>]}
+[0m19:05:39.739552 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-06-18 19:08:33.993345 | 3ea3e855-9e0e-47c8-bfb7-44be3c63fd2d ==============================
+[0m19:08:33.993345 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:08:33.996855 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'vars': 'ext_full_refresh: true', 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m19:08:33.997310 [debug] [MainThread]: Tracking: tracking
+[0m19:08:33.998186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144d8190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144d8e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144d8af0>]}
+[0m19:08:34.115620 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m19:08:34.116249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3ea3e855-9e0e-47c8-bfb7-44be3c63fd2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144eeeb0>]}
+[0m19:08:36.330466 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m19:08:36.348849 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m19:08:36.435753 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'test_model' in the 'models' section of file 'models/example/schema.yml'
+[0m19:08:36.513342 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_project_demo.unique_test_model_id.0af54df8e8' (models/example/schema.yml) depends on a node named 'test_model' in package '' which was not found
+[0m19:08:36.514154 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_project_demo.not_null_test_model_id.2ab61e5d0d' (models/example/schema.yml) depends on a node named 'test_model' in package '' which was not found
+[0m19:08:36.570835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3ea3e855-9e0e-47c8-bfb7-44be3c63fd2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114ace0d0>]}
+[0m19:08:36.586620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ea3e855-9e0e-47c8-bfb7-44be3c63fd2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1145025e0>]}
+[0m19:08:36.588874 [debug] [MainThread]: Acquiring new snowflake connection 'macro_stage_external_sources'
+[0m19:08:36.614471 [info ] [MainThread]: No external sources selected
+[0m19:08:36.615738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144d8190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114b895e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114b89640>]}
+[0m19:08:36.616273 [debug] [MainThread]: Flushing usage events
+[0m19:08:37.166716 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
+
+
+============================== 2023-06-18 19:09:12.261783 | 5cf22e61-c4d6-4944-9b13-e142f0131771 ==============================
+[0m19:09:12.261783 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:09:12.264991 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'vars': 'ext_full_refresh: true', 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m19:09:12.265650 [debug] [MainThread]: Tracking: tracking
+[0m19:09:12.266506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121970190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121970e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121970af0>]}
+[0m19:09:12.453497 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:09:12.454324 [debug] [MainThread]: Partial parsing: updated file: dbt_project_demo://models/example/schema.yml
+[0m19:09:12.482022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5cf22e61-c4d6-4944-9b13-e142f0131771', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121dc30d0>]}
+[0m19:09:12.495928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5cf22e61-c4d6-4944-9b13-e142f0131771', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121d40f70>]}
+[0m19:09:12.498243 [debug] [MainThread]: Acquiring new snowflake connection 'macro_stage_external_sources'
+[0m19:09:12.523793 [info ] [MainThread]: No external sources selected
+[0m19:09:12.525129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121970190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121d9caf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121d9ca90>]}
+[0m19:09:12.525779 [debug] [MainThread]: Flushing usage events
+[0m19:09:13.014270 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
+
+
+============================== 2023-06-18 19:09:28.122652 | a1530faa-35ea-46ed-b4ec-b232b906f582 ==============================
+[0m19:09:28.122652 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:09:28.126595 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m19:09:28.127284 [debug] [MainThread]: Tracking: tracking
+[0m19:09:28.128046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e901190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e901e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e901af0>]}
+[0m19:09:28.233362 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m19:09:28.233946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a1530faa-35ea-46ed-b4ec-b232b906f582', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e916160>]}
+[0m19:09:30.299764 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m19:09:30.318237 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m19:09:30.587037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a1530faa-35ea-46ed-b4ec-b232b906f582', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e9530d0>]}
+[0m19:09:30.600761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a1530faa-35ea-46ed-b4ec-b232b906f582', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e91a9d0>]}
+[0m19:09:30.603026 [debug] [MainThread]: Acquiring new snowflake connection 'macro_stage_external_sources'
+[0m19:09:30.628149 [info ] [MainThread]: No external sources selected
+[0m19:09:30.629455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e901190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11edc7a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11edc7ac0>]}
+[0m19:09:30.630299 [debug] [MainThread]: Flushing usage events
+[0m19:09:31.079740 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
+
+
+============================== 2023-06-18 19:11:04.643388 | 76cb9572-e1bb-4b2f-87e3-4fd738e1b399 ==============================
+[0m19:11:04.643388 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:11:04.646737 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m19:11:04.647240 [debug] [MainThread]: Tracking: tracking
+[0m19:11:04.648093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f4e5190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f4e5e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f4e5af0>]}
+[0m19:11:04.863631 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m19:11:04.864341 [debug] [MainThread]: Partial parsing: added file: dbt_project_demo://models/staging/src_ext_cma_source1.sql
+[0m19:11:04.890724 [debug] [MainThread]: 1603: static parser failed on staging/src_ext_cma_source1.sql
+[0m19:11:04.901134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f624f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fb15f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fb15eb0>]}
+[0m19:11:04.902011 [debug] [MainThread]: Flushing usage events
+[0m19:11:05.430302 [error] [MainThread]: Encountered an error:
+Compilation Error in model src_ext_cma_source1 (models/staging/src_ext_cma_source1.sql)
+  source() takes exactly two arguments (1 given)
+
+
+============================== 2023-06-18 19:11:34.216537 | 19a212e3-1a1a-4ad2-9144-1843827550c7 ==============================
+[0m19:11:34.216537 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:11:34.220454 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m19:11:34.221019 [debug] [MainThread]: Tracking: tracking
+[0m19:11:34.222159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120640190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120640e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120640af0>]}
+[0m19:11:34.413370 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m19:11:34.414047 [debug] [MainThread]: Partial parsing: added file: dbt_project_demo://models/staging/src_ext_cma_source1.sql
+[0m19:11:34.442255 [debug] [MainThread]: 1603: static parser failed on staging/src_ext_cma_source1.sql
+[0m19:11:34.450898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120780f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120c95f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120c95f40>]}
+[0m19:11:34.451527 [debug] [MainThread]: Flushing usage events
+[0m19:11:34.926912 [error] [MainThread]: Encountered an error:
+Compilation Error in model src_ext_cma_source1 (models/staging/src_ext_cma_source1.sql)
+  source() takes exactly two arguments (1 given)
+
+
+============================== 2023-06-18 19:12:06.365657 | d9df6502-92d9-43ca-b7d6-f9b7b484a436 ==============================
+[0m19:12:06.365657 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:12:06.369647 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m19:12:06.370554 [debug] [MainThread]: Tracking: tracking
+[0m19:12:06.371399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11da60160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11da60e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11da60ac0>]}
+[0m19:12:06.579747 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m19:12:06.580417 [debug] [MainThread]: Partial parsing: added file: dbt_project_demo://models/staging/src_ext_cma_source1.sql
+[0m19:12:06.606395 [debug] [MainThread]: 1603: static parser failed on staging/src_ext_cma_source1.sql
+[0m19:12:06.613968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11db96eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e08abe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e08ac70>]}
+[0m19:12:06.614552 [debug] [MainThread]: Flushing usage events
+[0m19:12:07.069280 [error] [MainThread]: Encountered an error:
+Compilation Error in model src_ext_cma_source1 (models/staging/src_ext_cma_source1.sql)
+  expected token ',', got 'table'
+    line 4
+      from {{ source('demo','{{ config(materialized='table') }}') }}
+
+
+============================== 2023-06-18 19:12:35.946124 | d69870fa-ec5b-435b-abad-6628a0886901 ==============================
+[0m19:12:35.946124 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:12:35.949459 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'macro': 'stage_external_sources', 'args': '{}', 'which': 'run-operation', 'rpc_method': 'run-operation', 'indirect_selection': 'eager'}
+[0m19:12:35.950144 [debug] [MainThread]: Tracking: tracking
+[0m19:12:35.951258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117bbc190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117bbce80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117bbcaf0>]}
+[0m19:12:36.173495 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m19:12:36.174457 [debug] [MainThread]: Partial parsing: added file: dbt_project_demo://models/staging/src_ext_cma_source1.sql
+[0m19:12:36.209000 [debug] [MainThread]: 1699: static parser successfully parsed staging/src_ext_cma_source1.sql
+[0m19:12:36.228141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117fa34c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117fc2f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117fc2ee0>]}
+[0m19:12:36.228723 [debug] [MainThread]: Flushing usage events
+[0m19:12:36.737321 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_project_demo.src_ext_cma_source1' (models/staging/src_ext_cma_source1.sql) depends on a source named 'parquet_with_inferred_schema.demo' which was not found
+
+
+============================== 2023-06-18 19:12:55.686239 | 0bf33efa-6b90-481f-8df3-8b411ea19ba3 ==============================
+[0m19:12:55.686239 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:12:55.689014 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m19:12:55.689513 [debug] [MainThread]: Tracking: tracking
+[0m19:12:55.690241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d5f8190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d5f8e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d5f8af0>]}
+[0m19:12:55.837743 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m19:12:55.838418 [debug] [MainThread]: Partial parsing: added file: dbt_project_demo://models/staging/src_ext_cma_source1.sql
+[0m19:12:55.860122 [debug] [MainThread]: 1699: static parser successfully parsed staging/src_ext_cma_source1.sql
+[0m19:12:55.878087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dc124c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dc30f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dc30ee0>]}
+[0m19:12:55.878706 [debug] [MainThread]: Flushing usage events
+[0m19:12:56.312795 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_project_demo.src_ext_cma_source1' (models/staging/src_ext_cma_source1.sql) depends on a source named 'parquet_with_inferred_schema.demo' which was not found
+
+
+============================== 2023-06-18 19:25:03.576421 | f63a2797-dd18-4b9f-b030-86157dd8f42d ==============================
+[0m19:25:03.576421 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:25:03.580159 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m19:25:03.580645 [debug] [MainThread]: Tracking: tracking
+[0m19:25:03.581345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1202ca190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1202cae80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1202caaf0>]}
+[0m19:25:03.691416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1202b12b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1208b3d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1208b3c10>]}
+[0m19:25:03.691958 [debug] [MainThread]: Flushing usage events
+[0m19:25:04.212153 [error] [MainThread]: Encountered an error:
+Compilation Error
+  The yml property file at models/staging/source.yml is invalid because its 'version:' tag is set to 1.  Only 2 is supported. Please consult the documentation for more information on yml property file syntax:
+  
+  https://docs.getdbt.com/reference/configs-and-properties
+
+
+============================== 2023-06-18 19:25:35.505302 | 42f94986-5df7-48de-bd70-d5d2f3e6092b ==============================
+[0m19:25:35.505302 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:25:35.509234 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m19:25:35.509747 [debug] [MainThread]: Tracking: tracking
+[0m19:25:35.510540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118b6c190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118b6ce80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118b6caf0>]}
+[0m19:25:35.632365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118b542b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118f35d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118f35c70>]}
+[0m19:25:35.633019 [debug] [MainThread]: Flushing usage events
+[0m19:25:36.135296 [error] [MainThread]: Encountered an error:
+Compilation Error
+  The yml property file at models/staging/source.yml is invalid because its 'version:' tag is set to 1.  Only 2 is supported. Please consult the documentation for more information on yml property file syntax:
+  
+  https://docs.getdbt.com/reference/configs-and-properties
+
+
+============================== 2023-06-18 19:26:10.723354 | a054e689-7ebe-4265-9214-ecc45c386f1b ==============================
+[0m19:26:10.723354 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:26:10.727671 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m19:26:10.728208 [debug] [MainThread]: Tracking: tracking
+[0m19:26:10.728911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121330190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121330e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121330af0>]}
+[0m19:26:10.960422 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 2 files added, 0 files changed.
+[0m19:26:10.961150 [debug] [MainThread]: Partial parsing: added file: dbt_project_demo://models/staging/source.yml
+[0m19:26:10.961588 [debug] [MainThread]: Partial parsing: added file: dbt_project_demo://models/staging/src_ext_cma_source.sql
+[0m19:26:10.991197 [debug] [MainThread]: 1699: static parser successfully parsed staging/src_ext_cma_source.sql
+[0m19:26:11.038775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12172a7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121727910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121727700>]}
+[0m19:26:11.039372 [debug] [MainThread]: Flushing usage events
+[0m19:26:11.482173 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_project_demo.src_ext_cma_source' (models/staging/src_ext_cma_source.sql) depends on a source named 'parquet_with_inferred_schema.demo' which was not found
+
+
+============================== 2023-06-18 19:28:57.291661 | 61127eef-27c6-4713-bca7-d3bb9003a4d6 ==============================
+[0m19:28:57.291661 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:28:57.294948 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/henygafsi/Documents/mars/cicd_dbt_demo/sfk_cicd_demo/dbt_project_demo', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m19:28:57.295539 [debug] [MainThread]: Tracking: tracking
+[0m19:28:57.296323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d770190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d770e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d770af0>]}
+[0m19:28:57.551498 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 2 files added, 0 files changed.
+[0m19:28:57.552174 [debug] [MainThread]: Partial parsing: added file: dbt_project_demo://models/staging/src_ext_cma_source.sql
+[0m19:28:57.552624 [debug] [MainThread]: Partial parsing: added file: dbt_project_demo://models/staging/source.yml
+[0m19:28:57.584530 [debug] [MainThread]: 1699: static parser successfully parsed staging/src_ext_cma_source.sql
+[0m19:28:57.648640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '61127eef-27c6-4713-bca7-d3bb9003a4d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dbc5f70>]}
+[0m19:28:57.666679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61127eef-27c6-4713-bca7-d3bb9003a4d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11db3aee0>]}
+[0m19:28:57.667893 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 537 macros, 1 operation, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m19:28:57.668667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61127eef-27c6-4713-bca7-d3bb9003a4d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11db14790>]}
+[0m19:28:57.671798 [info ] [MainThread]: 
+[0m19:28:57.674554 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:28:57.676310 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CMA_RAW_PRD'
+[0m19:28:57.704443 [debug] [ThreadPool]: Using snowflake connection "list_CMA_RAW_PRD"
+[0m19:28:57.704994 [debug] [ThreadPool]: On list_CMA_RAW_PRD: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "connection_name": "list_CMA_RAW_PRD"} */
+show terse schemas in database CMA_RAW_PRD
+    limit 10000
+[0m19:28:57.705387 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:28:58.822234 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1 seconds
+[0m19:28:58.824551 [debug] [ThreadPool]: On list_CMA_RAW_PRD: Close
+[0m19:28:58.913539 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CMA_RAW_PRD_ANALYTICS'
+[0m19:28:58.923685 [debug] [ThreadPool]: Using snowflake connection "list_CMA_RAW_PRD_ANALYTICS"
+[0m19:28:58.924107 [debug] [ThreadPool]: On list_CMA_RAW_PRD_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "connection_name": "list_CMA_RAW_PRD_ANALYTICS"} */
+show terse objects in CMA_RAW_PRD.ANALYTICS
+[0m19:28:58.924419 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:28:59.472854 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1 seconds
+[0m19:28:59.475134 [debug] [ThreadPool]: On list_CMA_RAW_PRD_ANALYTICS: Close
+[0m19:28:59.567448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61127eef-27c6-4713-bca7-d3bb9003a4d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11db3ad00>]}
+[0m19:28:59.568646 [info ] [MainThread]: Concurrency: 200 threads (target='prd')
+[0m19:28:59.569136 [info ] [MainThread]: 
+[0m19:28:59.601805 [debug] [Thread-1  ]: Began running node model.dbt_project_demo.my_first_dbt_model
+[0m19:28:59.602294 [debug] [Thread-2  ]: Began running node model.dbt_project_demo.src_ext_cma_source
+[0m19:28:59.602987 [info ] [Thread-1  ]: 1 of 3 START sql table model ANALYTICS.my_first_dbt_model ...................... [RUN]
+[0m19:28:59.604274 [info ] [Thread-2  ]: 2 of 3 START sql table model ANALYTICS.src_ext_cma_source ...................... [RUN]
+[0m19:28:59.606477 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt_project_demo.my_first_dbt_model'
+[0m19:28:59.607469 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.dbt_project_demo.src_ext_cma_source'
+[0m19:28:59.608126 [debug] [Thread-1  ]: Began compiling node model.dbt_project_demo.my_first_dbt_model
+[0m19:28:59.608545 [debug] [Thread-2  ]: Began compiling node model.dbt_project_demo.src_ext_cma_source
+[0m19:28:59.614142 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project_demo.my_first_dbt_model"
+[0m19:28:59.618687 [debug] [Thread-2  ]: Writing injected SQL for node "model.dbt_project_demo.src_ext_cma_source"
+[0m19:28:59.619881 [debug] [Thread-2  ]: Timing info for model.dbt_project_demo.src_ext_cma_source (compile): 2023-06-18 19:28:59.614563 => 2023-06-18 19:28:59.619755
+[0m19:28:59.620336 [debug] [Thread-2  ]: Began executing node model.dbt_project_demo.src_ext_cma_source
+[0m19:28:59.645765 [debug] [Thread-1  ]: Timing info for model.dbt_project_demo.my_first_dbt_model (compile): 2023-06-18 19:28:59.608824 => 2023-06-18 19:28:59.645586
+[0m19:28:59.664440 [debug] [Thread-1  ]: Began executing node model.dbt_project_demo.my_first_dbt_model
+[0m19:28:59.680802 [debug] [Thread-2  ]: Writing runtime sql for node "model.dbt_project_demo.src_ext_cma_source"
+[0m19:28:59.685531 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_project_demo.my_first_dbt_model"
+[0m19:28:59.687052 [debug] [Thread-2  ]: Using snowflake connection "model.dbt_project_demo.src_ext_cma_source"
+[0m19:28:59.687421 [debug] [Thread-2  ]: On model.dbt_project_demo.src_ext_cma_source: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "node_id": "model.dbt_project_demo.src_ext_cma_source"} */
+create or replace transient table CMA_RAW_PRD.ANALYTICS.src_ext_cma_source  as
+        (-- Use the `ref` function to select from other models
+
+select *
+from CMA_RAW_DEV.STAGING.parquet_with_inferred_schema
+        );
+[0m19:28:59.688352 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_project_demo.my_first_dbt_model"
+[0m19:28:59.688723 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m19:28:59.689079 [debug] [Thread-1  ]: On model.dbt_project_demo.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "node_id": "model.dbt_project_demo.my_first_dbt_model"} */
+create or replace transient table CMA_RAW_PRD.ANALYTICS.my_first_dbt_model  as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below 
+*/
+
+/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below 
+*/
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m19:28:59.691345 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m19:29:00.492415 [debug] [Thread-2  ]: Snowflake adapter: Snowflake query id: 01ad0e51-3201-d2a0-0000-f139000a644e
+[0m19:29:00.492850 [debug] [Thread-2  ]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'CMA_RAW_DEV.STAGING.PARQUET_WITH_INFERRED_SCHEMA' does not exist or not authorized.
+[0m19:29:00.493324 [debug] [Thread-2  ]: Timing info for model.dbt_project_demo.src_ext_cma_source (execute): 2023-06-18 19:28:59.620630 => 2023-06-18 19:29:00.493235
+[0m19:29:00.493675 [debug] [Thread-2  ]: On model.dbt_project_demo.src_ext_cma_source: Close
+[0m19:29:00.592576 [debug] [Thread-2  ]: Database Error in model src_ext_cma_source (models/staging/src_ext_cma_source.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'CMA_RAW_DEV.STAGING.PARQUET_WITH_INFERRED_SCHEMA' does not exist or not authorized.
+  compiled Code at target/run/dbt_project_demo/models/staging/src_ext_cma_source.sql
+[0m19:29:00.593597 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61127eef-27c6-4713-bca7-d3bb9003a4d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ecb6f70>]}
+[0m19:29:00.594358 [error] [Thread-2  ]: 2 of 3 ERROR creating sql table model ANALYTICS.src_ext_cma_source ............. [[31mERROR[0m in 0.99s]
+[0m19:29:00.596476 [debug] [Thread-2  ]: Finished running node model.dbt_project_demo.src_ext_cma_source
+[0m19:29:01.567316 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m19:29:01.601540 [debug] [Thread-1  ]: Timing info for model.dbt_project_demo.my_first_dbt_model (execute): 2023-06-18 19:28:59.681089 => 2023-06-18 19:29:01.601455
+[0m19:29:01.602158 [debug] [Thread-1  ]: On model.dbt_project_demo.my_first_dbt_model: Close
+[0m19:29:01.705625 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61127eef-27c6-4713-bca7-d3bb9003a4d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e6cb3a0>]}
+[0m19:29:01.706496 [info ] [Thread-1  ]: 1 of 3 OK created sql table model ANALYTICS.my_first_dbt_model ................. [[32mSUCCESS 1[0m in 2.10s]
+[0m19:29:01.707241 [debug] [Thread-1  ]: Finished running node model.dbt_project_demo.my_first_dbt_model
+[0m19:29:01.708600 [debug] [Thread-4  ]: Began running node model.dbt_project_demo.my_second_dbt_model
+[0m19:29:01.709769 [info ] [Thread-4  ]: 3 of 3 START sql view model ANALYTICS.my_second_dbt_model ...................... [RUN]
+[0m19:29:01.710882 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.dbt_project_demo.my_second_dbt_model'
+[0m19:29:01.711359 [debug] [Thread-4  ]: Began compiling node model.dbt_project_demo.my_second_dbt_model
+[0m19:29:01.715828 [debug] [Thread-4  ]: Writing injected SQL for node "model.dbt_project_demo.my_second_dbt_model"
+[0m19:29:01.717268 [debug] [Thread-4  ]: Timing info for model.dbt_project_demo.my_second_dbt_model (compile): 2023-06-18 19:29:01.711624 => 2023-06-18 19:29:01.717132
+[0m19:29:01.717901 [debug] [Thread-4  ]: Began executing node model.dbt_project_demo.my_second_dbt_model
+[0m19:29:01.759100 [debug] [Thread-4  ]: Writing runtime sql for node "model.dbt_project_demo.my_second_dbt_model"
+[0m19:29:01.760526 [debug] [Thread-4  ]: Using snowflake connection "model.dbt_project_demo.my_second_dbt_model"
+[0m19:29:01.760942 [debug] [Thread-4  ]: On model.dbt_project_demo.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "dbt_ci_profile", "target_name": "prd", "node_id": "model.dbt_project_demo.my_second_dbt_model"} */
+create or replace   view CMA_RAW_PRD.ANALYTICS.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from CMA_RAW_PRD.ANALYTICS.my_first_dbt_model
+where id = 1
+  );
+[0m19:29:01.761364 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m19:29:02.528346 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m19:29:02.531721 [debug] [Thread-4  ]: Timing info for model.dbt_project_demo.my_second_dbt_model (execute): 2023-06-18 19:29:01.718396 => 2023-06-18 19:29:02.531650
+[0m19:29:02.532110 [debug] [Thread-4  ]: On model.dbt_project_demo.my_second_dbt_model: Close
+[0m19:29:02.622171 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61127eef-27c6-4713-bca7-d3bb9003a4d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ec669d0>]}
+[0m19:29:02.622903 [info ] [Thread-4  ]: 3 of 3 OK created sql view model ANALYTICS.my_second_dbt_model ................. [[32mSUCCESS 1[0m in 0.91s]
+[0m19:29:02.623447 [debug] [Thread-4  ]: Finished running node model.dbt_project_demo.my_second_dbt_model
+[0m19:29:02.633100 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:29:02.633600 [info ] [MainThread]: 
+[0m19:29:02.634184 [info ] [MainThread]: Running 1 on-run-end hook
+[0m19:29:02.659755 [info ] [MainThread]: Running dbt Constraints
+[0m19:29:02.741640 [info ] [MainThread]: Finished dbt Constraints
+[0m19:29:02.742269 [debug] [MainThread]: Writing injected SQL for node "operation.dbt_constraints.dbt_constraints-on-run-end-0"
+[0m19:29:02.744234 [info ] [MainThread]: 1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m19:29:02.745152 [info ] [MainThread]: 1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m19:29:02.745834 [info ] [MainThread]: 
+[0m19:29:02.746962 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:29:02.747380 [debug] [MainThread]: Connection 'model.dbt_project_demo.my_first_dbt_model' was properly closed.
+[0m19:29:02.747685 [debug] [MainThread]: Connection 'model.dbt_project_demo.src_ext_cma_source' was properly closed.
+[0m19:29:02.747955 [debug] [MainThread]: Connection 'model.dbt_project_demo.my_second_dbt_model' was properly closed.
+[0m19:29:02.748371 [info ] [MainThread]: 
+[0m19:29:02.748785 [info ] [MainThread]: Finished running 2 table models, 1 view model, 1 hook in 0 hours 0 minutes and 5.08 seconds (5.08s).
+[0m19:29:02.749434 [debug] [MainThread]: Command end result
+[0m19:29:02.768652 [info ] [MainThread]: 
+[0m19:29:02.769277 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:29:02.769750 [info ] [MainThread]: 
+[0m19:29:02.770206 [error] [MainThread]: [33mDatabase Error in model src_ext_cma_source (models/staging/src_ext_cma_source.sql)[0m
+[0m19:29:02.771381 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m19:29:02.772528 [error] [MainThread]:   Object 'CMA_RAW_DEV.STAGING.PARQUET_WITH_INFERRED_SCHEMA' does not exist or not authorized.
+[0m19:29:02.773641 [error] [MainThread]:   compiled Code at target/run/dbt_project_demo/models/staging/src_ext_cma_source.sql
+[0m19:29:02.774529 [info ] [MainThread]: 
+[0m19:29:02.775223 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m19:29:02.775943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d758160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e773e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e773e80>]}
+[0m19:29:02.776505 [debug] [MainThread]: Flushing usage events

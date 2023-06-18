@@ -1,0 +1,19 @@
+version: 2
+sources:
+  - name: staging
+    database: CMA_RAW_DEV
+    schema: STAGING
+    loader: S3
+    loaded_at_field: collector_hour
+    
+    tables:
+      - name: parquet_with_inferred_schema
+        description: "External table using Parquet and inferring the schema"
+        external:
+          location: "@CMA_RAW_DEV.STAGING.demo_ext_stage"                  # reference an existing external stage
+          file_format: FF_PARQUET     # we need a named file format for infer to work
+          infer_schema: true                  # parameter to tell Snowflake we want to infer the table schema
+          partitions:
+            - name: section                   # we can define partitions on top of the schema columns
+              data_type: varchar(64)
+              expression: "substr(split_part(metadata$filename, 'section=', 2), 1, 1)"

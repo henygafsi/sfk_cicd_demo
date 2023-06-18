@@ -11,3 +11,27 @@ dbt_ci_profile:
       threads: 200
       type: snowflake
       warehouse: compute_wh
+  target: tst
+  outputs:
+    tst:
+      account: 'ye35211.eu-central-1'
+      user: CMA_DBT_USER
+      password: Tunisie23!
+      role: accountadmin
+      database: CMA_RAW_TST
+      schema: TRANSFORM
+      threads: 200
+      type: snowflake
+      warehouse: processing_wh
+  target: prd
+  outputs:
+    prd:
+      account: 'ye35211.eu-central-1'
+      user: CMA_DBT_USER
+      password: Tunisie23!
+      role: accountadmin
+      database: CMA_RAW_PRD
+      schema: ANALYTICS
+      threads: 200
+      type: snowflake
+      warehouse: compute_wh
