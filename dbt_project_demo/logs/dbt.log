@@ -2061,3 +2061,30 @@ from CMA_RAW_DEV.STAGING.my_first_dbt_model
 where id = 1
   );
 [0m11:11:13.359274 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m11:11:15.056292 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m11:11:15.062702 [debug] [Thread-3  ]: Timing info for model.dbt_project_demo.my_second_dbt_model (execute): 2023-06-18 11:11:13.136594 => 2023-06-18 11:11:15.062577
+[0m11:11:15.063389 [debug] [Thread-3  ]: On model.dbt_project_demo.my_second_dbt_model: Close
+[0m11:11:15.163853 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '322295d1-1321-4e83-ba05-d5cb7bc12493', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bbc5790>]}
+[0m11:11:15.165044 [info ] [Thread-3  ]: 2 of 2 OK created sql view model STAGING.my_second_dbt_model ................... [[32mSUCCESS 1[0m in 2.04s]
+[0m11:11:15.166391 [debug] [Thread-3  ]: Finished running node model.dbt_project_demo.my_second_dbt_model
+[0m11:11:15.179133 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:11:15.179885 [info ] [MainThread]: 
+[0m11:11:15.181037 [info ] [MainThread]: Running 1 on-run-end hook
+[0m11:11:15.189704 [info ] [MainThread]: Running dbt Constraints
+[0m11:11:15.338380 [info ] [MainThread]: Finished dbt Constraints
+[0m11:11:15.339988 [debug] [MainThread]: Writing injected SQL for node "operation.dbt_constraints.dbt_constraints-on-run-end-0"
+[0m11:11:15.349318 [info ] [MainThread]: 1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m11:11:15.350628 [info ] [MainThread]: 1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m11:11:15.351670 [info ] [MainThread]: 
+[0m11:11:15.353333 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:11:15.353961 [debug] [MainThread]: Connection 'model.dbt_project_demo.my_first_dbt_model' was properly closed.
+[0m11:11:15.354642 [debug] [MainThread]: Connection 'model.dbt_project_demo.my_second_dbt_model' was properly closed.
+[0m11:11:15.355196 [info ] [MainThread]: 
+[0m11:11:15.355663 [info ] [MainThread]: Finished running 1 table model, 1 view model, 1 hook in 0 hours 0 minutes and 7.30 seconds (7.30s).
+[0m11:11:15.356934 [debug] [MainThread]: Command end result
+[0m11:11:15.387642 [info ] [MainThread]: 
+[0m11:11:15.388855 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:11:15.389685 [info ] [MainThread]: 
+[0m11:11:15.390454 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m11:11:15.391080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11baf43d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a489400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aaa0c70>]}
+[0m11:11:15.391713 [debug] [MainThread]: Flushing usage events

@@ -106,3 +106,5 @@
 2023-06-18 11:11:07.304775 (MainThread): invalid escape sequence '\g'
 2023-06-18 11:11:07.420699 (MainThread): invalid escape sequence '\W'
 2023-06-18 11:11:07.421248 (MainThread): invalid escape sequence '\W'
+2023-06-18 11:11:15.210390 (MainThread): invalid escape sequence '\W'
+2023-06-18 11:11:15.212310 (MainThread): invalid escape sequence '\W'
