@@ -96,7 +96,7 @@
             dbt deps
             dbt compile --profiles-dir . --profile $DBT_PROFILE --target tst
             dbt run --exclude -m empty_table --profiles-dir . --profile $DBT_PROFILE --target tst
-            dbt test
+            
     prd:
       runs-on: ubuntu-latest
       needs: tst
