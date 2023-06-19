@@ -1,5 +1,0 @@
-version: 2
-sources:
-  - name: TRANSFORM
-    database: CMA_RAW_DEV
-    schema: TRANSFORM 
