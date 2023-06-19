@@ -1,0 +1,5 @@
+version: 2
+sources:
+  - name: analytics
+    database: CMA_RAW_DEV
+    schema: TRANSFORM

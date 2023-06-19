@@ -1,0 +1,1 @@
+select * from CMA_RAW_DEV.STAGING.src_ext_cma_source
