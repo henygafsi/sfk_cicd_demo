@@ -1,5 +1,4 @@
 
-
  select 
  $1:birthdate::varchar(500) as birthdate,
  $1:cc::varchar(500) as cc,

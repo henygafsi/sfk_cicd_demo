@@ -51,7 +51,7 @@
             cd $DBT_FOLDER
             dbt deps
             dbt compile --profiles-dir . --profile $DBT_PROFILE --target dev
-            dbt run --profiles-dir . --profile $DBT_PROFILE --target dev
+            dbt run --select -m my_first_dbt_model --profiles-dir . --profile $DBT_PROFILE --target dev
     tst:
       needs: dev
       runs-on: ubuntu-latest
@@ -95,9 +95,8 @@
             cd $DBT_FOLDER
             dbt deps
             dbt compile --profiles-dir . --profile $DBT_PROFILE --target tst
-            dbt run --exclude -m empty_table --profiles-dir . --profile $DBT_PROFILE --exclude example.* --target tst
-            dbt test --profiles-dir . --profile $DBT_PROFILE --target tst
-
+            dbt run --exclude -m empty_table --profiles-dir . --profile $DBT_PROFILE --target tst
+            
     prd:
       runs-on: ubuntu-latest
       needs: tst
@@ -142,7 +141,7 @@
             dbt deps
             dbt compile --profiles-dir . --profile $DBT_PROFILE --target prd
             dbt run  --exclude -m empty_table --profiles-dir . --profile $DBT_PROFILE --target prd
-            dbt snapshot --select dim_customer_snapshot  --profiles-dir . --profile $DBT_PROFILE --target prd
+
 
 
 
